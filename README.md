@@ -25,37 +25,28 @@ You need Python 3.9 or newer.
 2. Download and install Python (check **"Add Python to PATH"** during installation)
 3. Open **PowerShell** and verify installation:
 
-```bash
 python --version
 You should see something like:
-
-nginx
-Copy code
 Python 3.12.0
+
 📦 Install Required Packages
 Run the following in PowerShell (or your terminal):
-
-bash
-Copy code
 pip install ecdsa
+
 That’s it — no GPU, no CUDA, no special dependencies.
 
 💻 How to Run
 Download or clone this repository:
 
-bash
-Copy code
 git clone https://github.com/<yourusername>/flux-vanity-cpu.git
 cd flux-vanity-cpu
+
 Run the script:
 
-bash
-Copy code
 python flux_vanity_cpu.py
+
 Follow the on-screen prompts:
 
-sql
-Copy code
 Choose address type (1 = Zelcore [t1], 2 = SSP [t3]):
 Enter desired characters (default: FLUX):
 Should the pattern be (1) after t# or (2) anywhere in the address?
@@ -63,13 +54,9 @@ Should the pattern be case sensitive? (y/n, default n):
 The generator will start working using all CPU cores.
 You’ll see progress updates every few seconds:
 
-perl
-Copy code
 Tried 1,500,000 keys — 300,000 keys/s — elapsed 5s
 When a match is found:
 
-vbnet
-Copy code
 === MATCH FOUND ===
 Worker: 3
 Address: t3FLUX9JkLd3hRbJQwLkzjWL5v2PQGNaLw
@@ -121,7 +108,6 @@ Never share your private key.
 
 This generator runs locally — no data is sent anywhere.
 
-Always move any real FLUX funds immediately after transferring them to your new vanity address.
 
 🧾 License
 
